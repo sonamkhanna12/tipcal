@@ -1,0 +1,49 @@
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                TIP CALCULATOR
+            </div>
+            <div>
+                <div>
+                    <p>How much was your bill?</p>
+                    ₹ <input type="number" id="billamt"placeholder="Amount to be paid">
+                    <p>How was the service?</p>
+                    <select id="serviceQual">
+                    <option selected="" disabled="" hidden="">
+                        Select
+                    </option>
+                    <option value="0.05">5% - Terrible</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.15">15% - It Was Ok</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.25">25% - Great</option>
+                    <option value="0.3">30% - Outstanding</option>
+                </select>
+                    <p>Total Number Of Persons</p>
+                    <input type="number" id="peopleamt"  placeholder="Number of people sharing the bill"><br>
+                    <button id="calculate">Calculate</button>
+                </div>
+                <div class="tip">
+                    <p class="sd">Tip Amount</p>
+                    ₹ <span id="total">0.00</span>
+                    <span id="each" style="display: none;">each</span>
+                </div>
+            </div>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
